@@ -1,0 +1,21 @@
+@import "./variables";
+@import "./mixins";
+@import "./grid";
+@import "./header";
+@import "./main";
+@import "./media";
+@import "./footer";
+
+/* mobile (xs)*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+
+  a {
+    text-decoration: none;
+  }
+}

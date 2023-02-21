@@ -1,0 +1,1582 @@
+// mobile(xs)
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-fluid {
+  width: 100%;
+}
+
+.general {
+  background: url(./img/pictures/flower-bg.png) no-repeat,
+    linear-gradient(
+      39.89deg,
+      rgba(0, 115, 12, 0.81) -22.86%,
+      rgba(251, 246, 238, 0) 116.18%
+    );
+  background-position: 0 100%;
+  display: flex;
+  flex-direction: column-reverse;
+  color: $typography-black-color;
+
+  .content {
+    padding-left: 15px;
+    padding-right: 15px;
+
+    .subtitle {
+      display: flex;
+      align-items: center;
+
+      font-weight: 700;
+      font-size: 14px;
+      margin-top: 48px;
+    }
+    .subtitle::before {
+      content: url(./img/icons/main/leaves.svg);
+      padding-right: 5px;
+    }
+
+    .title {
+      margin-top: 10px;
+    }
+
+    .subtitle-text {
+      margin-top: 15px;
+    }
+
+    .buttons {
+      margin-top: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .button {
+        background-color: $theme-green-color;
+        border: 1px solid $theme-green-color;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $white-color;
+        font-weight: 700;
+        padding: 0;
+        width: calc(100% - 44px);
+        height: 44px;
+        font-size: 16px;
+        line-height: 20px;
+      }
+
+      .link {
+        margin-top: 19px;
+        font-weight: 600;
+        font-size: 14px;
+        color: $theme-green-color;
+      }
+
+      .link::after {
+        content: url(./img/icons/main/arrow-next-green.svg);
+        padding-left: 10px;
+      }
+    }
+
+    .statistic-small {
+      display: flex;
+      justify-content: flex-end;
+      color: $typography-black-color;
+      margin-bottom: 35px;
+      margin-top: 40px;
+
+      .statistic-item {
+        width: 40%;
+        height: 32px;
+        background: linear-gradient(180deg, #fff8f1 0%, #cbe5ce 100%);
+        border-radius: 32px;
+        margin-left: 10px;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 32px;
+        text-align: center;
+
+        span {
+          font-weight: 700;
+          font-size: 12px;
+        }
+      }
+    }
+
+    .statistic-large {
+      display: none;
+    }
+  }
+}
+
+section {
+  .title {
+    font-size: 28px;
+    line-height: 38px;
+    font-weight: 700;
+
+    span {
+      color: $theme-green-color;
+    }
+  }
+
+  .subtitle-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+
+// Services we provide mobile xs
+.services {
+  margin-top: 50px;
+
+  .title {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .subtitle-text {
+    text-align: center;
+    color: $typography-gray-color;
+  }
+
+  .cards {
+    margin-top: 30px;
+    row-gap: 20px;
+
+    .card {
+      display: flex;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
+      border-radius: 10px;
+
+      .content {
+        margin-left: 20px;
+
+        .title {
+          text-align: left;
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 22px;
+          padding-bottom: 10px;
+        }
+
+        .description {
+          text-align: left;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 22px;
+          color: $typography-gray-color;
+        }
+      }
+    }
+
+    .card:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+// Expirience in Gardening & Landscaping mobile xs
+.experience {
+  margin-top: 50px;
+
+  .images {
+    position: relative;
+
+    .background-rectangle {
+      width: 55%;
+      height: 63%;
+      background: $theme-green-color;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+    }
+
+    .img-main {
+      position: relative;
+      padding-top: 39px;
+      padding-right: 35px;
+      padding-bottom: 0px;
+      padding-left: 12px;
+      z-index: 10;
+      width: 100%;
+      margin-bottom: 22%;
+    }
+
+    .img-front {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      z-index: 20;
+      width: 70%;
+    }
+  }
+
+  .content {
+    .title {
+      margin-bottom: 15px;
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    .subtitle-text {
+      color: $typography-gray-color;
+    }
+
+    .subtitle-text:first-of-type {
+      margin-bottom: 20px;
+    }
+
+    .cards {
+      margin-top: 40px;
+      display: flex;
+      row-gap: 30px;
+
+      // .col-6 {
+      //   flex: 0 0 50%;
+      //   max-width: 50%;
+      // }
+
+      .card {
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
+        border-radius: 5px;
+
+        .icon {
+          height: 50px;
+        }
+
+        .text {
+          font-size: 14px;
+          line-height: 19px;
+          text-align: center;
+          margin-top: 5px;
+          font-weight: 700;
+        }
+      }
+    }
+
+    .button {
+      margin: 0 auto;
+      margin-top: 30px;
+      background-color: $theme-green-color;
+      border: 1px solid $theme-green-color;
+      border-radius: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: $white-color;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 20px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  }
+}
+
+// Why choose Us - mobile xs
+.why-choose-us {
+  margin-top: 50px;
+  background: $theme-dark-green-color;
+
+  .background {
+    background: url(./img/pictures/pngegg-bg.png) 0 0 no-repeat,
+      url(./img/pictures/pngegg-bg-1.png) 100% 0 no-repeat;
+  }
+
+  .layout {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .image {
+    img {
+      width: 100%;
+    }
+  }
+
+  .content {
+    margin-top: 30px;
+    color: $white-color;
+    text-align: center;
+
+    .subtitle-text {
+      margin-top: 30px;
+      margin-bottom: 40px;
+    }
+
+    .tags {
+      row-gap: 20px;
+
+      .tag {
+        display: flex;
+
+        .icon {
+          background: $white-color url(./img/icons/main/tick.svg) no-repeat 50%;
+          border-radius: 50%;
+          height: 20px;
+          width: 20px;
+        }
+
+        .description {
+          padding-left: 10px;
+        }
+      }
+    }
+
+    .button {
+      margin: 0 auto;
+      margin-top: 30px;
+      background-color: $theme-green-color;
+      border: 1px solid $theme-green-color;
+      border-radius: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: $white-color;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 20px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  }
+}
+
+// working-process - mobile xs
+.working-process {
+  margin-top: 50px;
+
+  .content {
+    padding-left: 15px;
+    padding-right: 15px;
+
+    .title {
+      text-align: center;
+    }
+
+    .subtitle-text {
+      text-align: center;
+      color: $typography-gray-color;
+      margin-top: 15px;
+      margin-bottom: 30px;
+    }
+
+    .cards {
+      row-gap: 20px;
+
+      .card {
+        box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
+        border-radius: 10px;
+        padding: 20px;
+        background: url(./img/pictures/BG-Img-S.png) 85% 50% no-repeat;
+
+        .card-header {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-bottom: 20px;
+
+          .number {
+            color: #e3e3e3;
+            font-weight: 800;
+            font-size: 45px;
+            padding-right: 10px;
+          }
+        }
+
+        .card-content {
+          .text {
+            margin-bottom: 10px;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 22px;
+          }
+
+          .description {
+            color: $typography-gray-color;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 22px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// call-to-action - mobile xs
+.call-to-action {
+  margin-top: 50px;
+
+  .layout {
+    background-image: url(./img/pictures/hand-holding-small-tree-planting.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 36px;
+    padding-right: 36px;
+    border-radius: 5px;
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      row-gap: 30px;
+
+      .title {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 27px;
+        text-align: center;
+        color: $white-color;
+      }
+
+      .button {
+        background-color: $theme-green-color;
+        border: 1px solid $theme-green-color;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $white-color;
+        font-weight: 700;
+        color: $theme-green-color;
+        background-color: $white-color;
+        height: 40px;
+        width: 137px;
+        border-color: transparent;
+      }
+
+      .button::before {
+        content: url(./img/pictures/call-us-green.svg);
+        padding-right: 10px;
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+}
+
+// trained-staff - mobile xs
+.staff {
+  margin-top: 50px;
+
+  .section-header {
+    text-align: center;
+
+    .title {
+      margin-bottom: 15px;
+    }
+
+    .content {
+      .button {
+        background-color: $theme-green-color;
+        border: 1px solid $theme-green-color;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $white-color;
+        font-weight: 700;
+        margin: 0 auto;
+        margin-top: 30px;
+        font-size: 16px;
+        line-height: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+    }
+  }
+
+  .cards {
+    margin-top: 40px;
+
+    .card {
+      .option-text {
+        width: 100%;
+        height: 20%;
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: $white-color;
+        text-align: center;
+        border-radius: 5px;
+        background: linear-gradient(
+          6.68deg,
+          #00730c 4.95%,
+          rgba(251, 246, 238, 0) 264.79%
+        );
+        transition: 0.3s ease;
+
+        .option-name {
+          font-size: 18px;
+          line-height: 25px;
+        }
+
+        .option-description {
+          color: $white-color;
+          font-size: 14px;
+          line-height: 22px;
+        }
+
+        .option-links {
+          margin-top: 20px;
+
+          display: none;
+          gap: 25px;
+          justify-content: center;
+          transition: 0.2s ease;
+
+          a {
+            display: block;
+            width: 20px;
+            height: 20px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+          }
+
+          .google-logo {
+            background-image: url(./img/icons/main/google.svg);
+          }
+
+          .facebook-logo {
+            background-image: url(./img/icons/main/facebook.svg);
+          }
+
+          .twitter-logo {
+            background-image: url(./img/icons/main/twitter.svg);
+          }
+
+          .pinterest-logo {
+            background-image: url(./img/icons/main/pinterest.svg);
+          }
+
+          .linkedin-logo {
+            background-image: url(./img/icons/main/linkedin.svg);
+          }
+        }
+      }
+    }
+
+    .card:hover .option-text {
+      height: 100%;
+
+      .option-links {
+        display: flex;
+      }
+    }
+    .background {
+      margin: 15px;
+      position: relative;
+
+      .photo {
+        width: 100%;
+        border-radius: 10px;
+      }
+    }
+  }
+}
+
+.slick-dotted {
+  .slick-slider {
+    margin-bottom: 20px;
+  }
+}
+
+.slick-dots li button:before {
+  content: "";
+  background-color: $theme-green-color;
+  width: 20px;
+  height: 6px;
+  border-radius: 8px;
+}
+
+// clients-saying - mobile xs
+.clients-saying {
+  .container {
+    padding-bottom: 5px;
+  }
+
+  background-color: #e6f6ea;
+  position: relative;
+  z-index: 1;
+
+  .section-header {
+    text-align: center;
+    position: relative;
+
+    .title {
+      margin-bottom: 15px;
+      margin-top: 50px;
+    }
+
+    .subtitle-text {
+      margin-bottom: 40px;
+      font-size: 14px;
+      line-height: 22px;
+    }
+  }
+
+  .cards {
+    position: relative;
+
+    .card {
+      .background {
+        background-color: $white-color;
+        padding: 20px;
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-bottom: 30px;
+
+        .image {
+          position: relative;
+          width: 135px;
+          margin-bottom: 30px;
+
+          img {
+            position: relative;
+            z-index: 10;
+          }
+
+          .background-rectangle {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background: linear-gradient(
+              6.68deg,
+              #00730c 4.95%,
+              rgba(251, 246, 238, 0) 264.79%
+            );
+            border-radius: 30px;
+            width: 100%;
+            height: 135px;
+            z-index: 1;
+          }
+        }
+
+        .content {
+          .feedback {
+            font-size: 14px;
+            line-height: 22px;
+            padding-bottom: 15px;
+          }
+
+          .author {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .name {
+              font-weight: 700;
+              font-size: 16px;
+              line-height: 22px;
+              color: $typography-black-color;
+
+              .job {
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 16px;
+                color: $typography-gray-color;
+              }
+            }
+
+            .rate {
+              padding-right: 16px;
+              display: flex;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// FAQ - mobile xs
+.FAQ {
+  margin-top: 50px;
+  .FAQ-layout {
+    .FAQ-image {
+      display: none;
+    }
+  }
+
+  .section-header {
+    text-align: center;
+
+    .title {
+      margin-bottom: 15px;
+    }
+
+    .subtitle-text {
+      margin-bottom: 40px;
+      font-size: 14px;
+      line-height: 22px;
+    }
+  }
+
+  .spoiler-wrapper {
+    margin-top: 42px;
+
+    .spoiler {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+// insights-and-articles - mobile xs
+.insights-and-articles {
+  margin-top: 50px;
+
+  .container {
+    .section-header {
+      text-align: center;
+
+      .title {
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+  .content {
+    margin-left: -15px;
+    margin-right: -15px;
+    padding-bottom: 15px;
+
+    article {
+      padding-left: 15px;
+      padding-right: 15px;
+
+      .card {
+        height: 100%;
+        border-radius: 5px;
+        background-color: $white-color;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 20px;
+        padding-right: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        height: 474px;
+
+        .tag {
+          width: fit-content;
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 30px;
+          text-align: center;
+          color: $theme-green-color;
+          padding-left: 25px;
+          padding-right: 25px;
+          background: #d9f1e0;
+        }
+
+        .card-text {
+          margin-top: 35px;
+          margin-bottom: 30px;
+          padding-top: 5px;
+
+          .title {
+            width: 90%;
+            color: $theme-green-color;
+            margin-bottom: 15px;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 22px;
+            text-align: left;
+          }
+
+          .subtitle-text {
+            text-align: left;
+          }
+        }
+
+        .user-and-date {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          color: $typography-gray-color;
+          font-style: normal;
+          font-size: 14px;
+          line-height: 24px;
+          padding-top: 10px;
+          padding-left: 10px;
+          padding-right: 10px;
+          border-top: 1px solid #e3e3e3;
+
+          .date {
+            font-weight: 700;
+          }
+
+          .user {
+            padding-left: 30px;
+            font-weight: 400;
+            background: no-repeat url(./img/icons/main/admin-icon-green.svg);
+          }
+        }
+      }
+    }
+
+    .article-1,
+    .article-3 {
+      .card {
+        background-blend-mode: multiply;
+
+        .card-text {
+          .title {
+            color: $white-color;
+          }
+
+          .subtitle-text {
+            color: $white-color;
+          }
+        }
+
+        .user-and-date {
+          color: $white-color;
+          border-top: 1px solid $white-color;
+
+          .user {
+            padding-left: 30px;
+            font-weight: 400;
+            background-image: url(./img/icons/main/admin-icon-white.svg);
+          }
+        }
+      }
+    }
+
+    .article-1 {
+      .card {
+        background: url(./img/pictures/full-shot-people-holding-plants.jpg),
+          rgba(12, 12, 12, 0.8);
+      }
+    }
+
+    .article-2 {
+      .card {
+        background: right -40px top -30px/150px no-repeat
+          url(./img/pictures/bg-leaf.svg);
+      }
+    }
+
+    .article-3 {
+      .card {
+        background: right/cover no-repeat
+            url(./img/pictures/close-up-hands-holding-house-plant.jpg),
+          rgba(12, 12, 12, 0.8);
+      }
+    }
+  }
+}
+
+.spoiler-header-box {
+  height: 44px;
+  background: #fff8f1;
+  border-radius: 3px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 10px;
+  cursor: pointer;
+
+  .spoiler-heaader {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+  }
+}
+
+.spoiler-icon {
+  width: 20px;
+  height: 20px;
+  background-image: url(./img/pictures/plus.svg);
+  background-repeat: no-repeat;
+}
+
+.spoiler-content {
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  font-size: 14px;
+  line-height: 22px;
+  color: $typography-gray-color;
+  display: none;
+}
+
+.active-spoiler {
+  display: block;
+}
+
+.active-spoiler-header {
+  background: $theme-green-color;
+  color: $white-color;
+}
+
+.close-icon {
+  background-image: url(./img/pictures/cross.svg);
+}
+
+// partners - mobile xs
+.partners {
+  background-color: $white-color;
+  height: 70px;
+
+  .row {
+    height: 100%;
+    gap: 60px;
+    justify-content: center;
+    overflow: hidden;
+
+    img {
+      display: block;
+      height: 100%;
+      mix-blend-mode: luminosity;
+    }
+  }
+}
+
+// desktop
+@media (min-width: 1200px) {
+  .main {
+    row-gap: 100px;
+  }
+
+  .general {
+    flex-direction: row;
+
+    background: linear-gradient(
+      79.58deg,
+      rgba(0, 115, 12, 0.579) -39.14%,
+      rgba(251, 246, 238, 0) 90.23%
+    );
+
+    .content {
+      width: 50%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+
+      .layout {
+        width: 585px;
+      }
+
+      .subtitle {
+        font-size: 16px;
+        margin-top: 0;
+      }
+
+      .subtitle-text {
+        color: $typography-gray-color;
+      }
+
+      .buttons {
+        margin-top: 25px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+
+        .button {
+          padding-top: 13px;
+          padding-bottom: 13px;
+          padding-left: 20px;
+          padding-right: 20px;
+
+          margin-right: 30px;
+          height: 50px;
+          font-size: 18px;
+
+          width: auto;
+        }
+
+        .button:hover {
+          background-color: $white-color;
+          cursor: pointer;
+          color: $theme-green-color;
+          transition: all ease-in-out 0.2s;
+        }
+
+        .link {
+          margin: 0;
+          color: $typography-gray-color;
+          font-size: 18px;
+          line-height: 25px;
+          display: flex;
+          align-items: center;
+        }
+
+        .link::after {
+          content: url(./img/icons/main/arrow-next-gray.svg);
+          padding-left: 15px;
+          height: 22px;
+        }
+
+        .link:hover {
+          color: $theme-green-color;
+        }
+
+        .link:hover::after {
+          content: url(./img/icons/main/arrow-next-green.svg);
+        }
+      }
+
+      .statistic-small {
+        display: none;
+      }
+
+      .statistic-large {
+        display: flex;
+        font-weight: 700;
+        font-size: 16px;
+        margin-top: 30px;
+
+        .statistic-item {
+          display: flex;
+          align-items: center;
+          margin-right: 10px;
+
+          span {
+            height: 50px;
+            width: 50px;
+            line-height: 50px;
+            background: linear-gradient(
+              72.71deg,
+              $theme-green-color -83.5%,
+              #f9f9f9 93.84%
+            );
+            border-radius: 25px;
+            text-align: center;
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+
+    .image {
+      width: 50%;
+      padding-top: 46px;
+    }
+  }
+
+  section {
+    .title {
+      font-weight: 800;
+      font-size: 35px;
+      line-height: 60px;
+      margin-bottom: 15px;
+
+      span {
+        color: $theme-green-color;
+      }
+    }
+
+    .subtitle-text {
+      font-size: 16px;
+      line-height: 30px;
+    }
+  }
+
+  // Services We Provide desktop
+  .services {
+    margin-top: 100px;
+
+    .title {
+      margin-bottom: 30px;
+    }
+
+    .subtitle-text {
+      width: 1000px;
+      margin: 0 auto;
+    }
+
+    .cards {
+      margin-top: 50px;
+      row-gap: 30px;
+
+      .card {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 60px;
+        padding-bottom: 60px;
+        padding-left: 42px;
+        padding-right: 42px;
+        margin-bottom: 0;
+        height: 366px;
+
+        .image {
+          width: 70px;
+          margin-bottom: 50px;
+        }
+
+        .content {
+          margin-left: 0;
+
+          .title {
+            text-align: center;
+            font-size: 20px;
+            line-height: 28px;
+          }
+
+          .description {
+            text-align: center;
+            font-size: 16px;
+            line-height: 28px;
+          }
+        }
+      }
+    }
+  }
+
+  // Expirience in Gardening & Landscaping desktop
+  .experience {
+    margin-top: 100px;
+
+    .content {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      .title {
+        margin-bottom: 25px;
+        margin-top: 0;
+        text-align: left;
+      }
+
+      .subtitle-text:first-of-type {
+        margin-bottom: 20px;
+      }
+
+      .cards {
+        margin-top: 40px;
+
+        .card {
+          box-shadow: none;
+          padding: 15px 0 15px 30px;
+          flex-direction: row;
+          align-items: center;
+
+          .text {
+            font-size: 24px;
+            line-height: 33px;
+            margin-top: 0;
+            text-align: left;
+            margin-left: 20px;
+          }
+        }
+      }
+
+      .button {
+        margin: 0;
+        margin-top: 40px;
+        font-size: 18px;
+        line-height: 24px;
+        padding-top: 13px;
+        padding-bottom: 13px;
+        padding-left: 35px;
+        padding-right: 35px;
+      }
+
+      .button:hover {
+        background-color: $white-color;
+        cursor: pointer;
+        color: $theme-green-color;
+        transition: all ease-in-out 0.2s;
+      }
+    }
+  }
+
+  // Why choose Us - desktop
+  .why-choose-us {
+    margin-top: 100px;
+
+    .layout {
+      padding-top: 100px;
+      padding-bottom: 100px;
+    }
+
+    .row-reverse {
+      flex-direction: row-reverse;
+    }
+
+    .background {
+      background: none;
+    }
+
+    .image {
+      display: flex;
+      height: 100%;
+      align-items: center;
+    }
+
+    .content {
+      text-align: left;
+
+      .subtitle-text {
+        margin-top: 30px;
+        margin-bottom: 50px;
+      }
+
+      .tags {
+        .tag {
+          .description {
+            padding-left: 20px;
+          }
+        }
+      }
+
+      .button {
+        margin: 0;
+        margin-top: 50px;
+        font-size: 18px;
+        line-height: 24px;
+        padding-top: 13px;
+        padding-bottom: 13px;
+        padding-left: 35px;
+        padding-right: 35px;
+      }
+
+      .button:hover {
+        background-color: $white-color;
+        cursor: pointer;
+        color: $theme-green-color;
+        transition: all ease-in-out 0.2s;
+
+        svg path {
+          fill: $theme-green-color;
+          transition: all ease-in-out 0.2s;
+        }
+      }
+    }
+  }
+
+  // working-process - desktop
+  .working-process {
+    margin-top: 100px;
+
+    // .col-3 {
+    //   flex: 0 0 25%;
+    //   max-width: 25%;
+    // }
+
+    .content {
+      padding: 0;
+
+      .subtitle-text {
+        margin: 20px 0 50px;
+      }
+
+      .cards {
+        gap: 0;
+
+        .card {
+          padding-top: 50px;
+          padding-bottom: 50px;
+          padding-left: 30px;
+          padding-right: 30px;
+          background: url(./img/pictures/BG-Img-L.png) 85% 50% no-repeat;
+
+          .card-header {
+            margin-bottom: 30px;
+
+            .number {
+              font-size: 78px;
+              padding-right: 0;
+            }
+          }
+
+          .card-content {
+            .text {
+              margin-bottom: 20px;
+              font-size: 24px;
+              line-height: 33px;
+            }
+
+            .description {
+              font-size: 18px;
+              line-height: 30px;
+            }
+          }
+        }
+
+        .card:hover {
+          background: url(./img/pictures/BG-Img-L-hover.png) 85% 50% no-repeat;
+          cursor: pointer;
+          background-color: $theme-green-color;
+          color: $white-color;
+          transition: all ease-in-out 0.2s;
+
+          .card-content {
+            .description {
+              color: $white-color;
+            }
+          }
+
+          .number {
+            color: $white-color;
+          }
+
+          svg path {
+            fill: $white-color;
+          }
+        }
+      }
+    }
+  }
+
+  // call-to-action - desktop
+  .call-to-action {
+    margin-top: 100px;
+
+    .layout {
+      background-image: url(./img/pictures/hand-holding-small-tree-planting-L.jpg);
+      height: 247px;
+      padding: 0;
+      border-radius: 10px;
+
+      .content {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        height: 100%;
+        row-gap: 0;
+        margin-right: 3%;
+        margin-left: 35%;
+
+        .title {
+          font-size: 33px;
+          line-height: 45px;
+          text-align: left;
+          margin-right: 3%;
+        }
+
+        .button {
+          height: 50px;
+          width: 170px;
+          font-size: 18px;
+        }
+
+        .button:hover {
+          background-color: $theme-green-color;
+          color: $white-color;
+          transition: all ease-in-out 0.2s;
+          cursor: pointer;
+        }
+
+        .button:hover::before {
+          content: url(./img/pictures/call-us.svg);
+        }
+      }
+    }
+  }
+
+  // trained-staff - desktop
+  .staff {
+    margin-top: 100px;
+
+    .section-header {
+      text-align: left;
+
+      .title {
+        margin-bottom: 30px;
+      }
+
+      .content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .subtitle-text {
+          width: 80%;
+        }
+
+        .button {
+          background-color: $theme-green-color;
+          border: 1px solid $theme-green-color;
+          border-radius: 5px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: $white-color;
+          font-weight: 700;
+          margin: 0;
+          font-size: 18px;
+          line-height: 24px;
+          padding-top: 13px;
+          padding-bottom: 13px;
+          padding-left: 35px;
+          padding-right: 35px;
+        }
+
+        .button:hover {
+          background-color: $white-color;
+          cursor: pointer;
+          color: $theme-green-color;
+          transition: all ease-in-out 0.2s;
+        }
+      }
+    }
+    .cards {
+      margin-top: 50px;
+    }
+  }
+
+  // clients-saying - desktop
+  .clients-saying {
+    .container {
+      padding-bottom: 5px;
+    }
+    .section-header {
+      text-align: left;
+
+      .title {
+        padding-top: 100px;
+        margin-bottom: 30px;
+        margin-top: 100px;
+      }
+
+      .subtitle-text {
+        margin-bottom: 50px;
+        font-size: 18px;
+        line-height: 30px;
+      }
+    }
+
+    .cards {
+      .card {
+        .background {
+          padding-top: 30px;
+          padding-bottom: 30px;
+          padding-left: 25px;
+          padding-right: 25px;
+          margin-left: 15px;
+          margin-right: 15px;
+          display: flex;
+          column-gap: 30px;
+
+          .image {
+            width: fit-content;
+            height: 276px;
+            margin-bottom: 0;
+
+            img {
+              position: relative;
+              margin: 0;
+              height: 276px;
+            }
+
+            .background-rectangle {
+              position: absolute;
+              bottom: 0;
+              height: 200px;
+            }
+          }
+
+          .content {
+            .feedback {
+              font-size: 18px;
+              line-height: 30px;
+              padding-bottom: 27px;
+            }
+
+            .author {
+              .name {
+                font-size: 24px;
+                line-height: 33px;
+
+                .job {
+                  font-size: 14px;
+                  line-height: 25px;
+                }
+              }
+
+              .rate {
+                padding-right: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // FAQ - desktop
+  .FAQ {
+    margin-top: 100px;
+    .section-header {
+      text-align: left;
+
+      .title {
+        font-size: 35px;
+        line-height: 60px;
+        margin-bottom: 30px;
+      }
+
+      .subtitle-text {
+        margin-bottom: 40px;
+        font-size: 18px;
+        line-height: 30px;
+      }
+    }
+
+    .FAQ-layout {
+      display: flex;
+
+      .FAQ-image {
+        display: block;
+        width: 40%;
+        margin-top: 45px;
+      }
+
+      .FAQ-image {
+        margin: 0;
+        height: 530px;
+
+        img {
+          height: 100%;
+        }
+      }
+    }
+  }
+
+  // insights-and-articles - desktop
+  .insights-and-articles {
+    margin-top: 100px;
+
+    .container {
+      .section-header {
+        .subtitle-text {
+          font-size: 18px;
+          line-height: 30px;
+        }
+      }
+    }
+  }
+}
